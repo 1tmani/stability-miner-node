@@ -59,6 +59,17 @@
             "net_received": 73.5,
             "latency_ms": 51.507402867837925,
             "timestamp": "Sun Mar 15 05:32:29 2026"
+        },
+        {
+            "block_height": 7,
+            "type": "NETWORK_TRANSFER",
+            "from": "OVERLORD",
+            "to": "CYBER_MINER",
+            "sent_amount": 100.0,
+            "gas_fee": 2.0,
+            "net_received": 98.0,
+            "latency_ms": 34.45291352288774,
+            "timestamp": "Sun Mar 15 05:34:20 2026"
         }
     ]
 }
