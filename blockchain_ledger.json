@@ -1,0 +1,14 @@
+{
+    "blockchain_id": "SYNAPTIC_CHAIN_01",
+    "wallet_address": "0x-ghp_i18n...e7Wy",
+    "total_supply": 100.0,
+    "blocks": [
+        {
+            "block_height": 0,
+            "type": "GENESIS",
+            "amount": 100.0,
+            "timestamp": "Sun Mar 15 04:57:52 2026",
+            "status": "VERIFIED"
+        }
+    ]
+}
