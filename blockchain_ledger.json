@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 290.97970000000004,
+    "total_supply": 289.97970000000004,
     "blocks": [
         {
             "block_height": 0,
@@ -137,6 +137,16 @@
             "net_value_unlocked": 120.1425,
             "tx_id": "0x-ba439b65",
             "status": "LIQUIDITY_RELEASED"
+        },
+        {
+            "block_height": 16,
+            "type": "BANK_WITHDRAWAL_FINALIZED",
+            "amount": 1.0,
+            "currency": "USD",
+            "net_payout": 120.14,
+            "tx_id": "TX-STRIPE-a93be9e",
+            "status": "BANK_HANDSHAKE_COMPLETE",
+            "timestamp": "Sun Mar 15 06:40:25 2026"
         }
     ]
 }
