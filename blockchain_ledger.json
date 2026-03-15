@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 289.97970000000004,
+    "total_supply": 288.97970000000004,
     "blocks": [
         {
             "block_height": 0,
@@ -147,6 +147,15 @@
             "tx_id": "TX-STRIPE-a93be9e",
             "status": "BANK_HANDSHAKE_COMPLETE",
             "timestamp": "Sun Mar 15 06:40:25 2026"
+        },
+        {
+            "block_height": 17,
+            "type": "BANK_PAYOUT_VERIFIED",
+            "amount_deducted": 1.0,
+            "fiat_value": 120.14,
+            "tx_id": "BANK-TX-e0bd7528",
+            "status": "FUNDS_ROUTED_TO_BANK",
+            "timestamp": "Sun Mar 15 06:43:43 2026"
         }
     ]
 }
