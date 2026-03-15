@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 290.4328325301205,
+    "total_supply": 336.9704325301205,
     "blocks": [
         {
             "block_height": 0,
@@ -261,6 +261,46 @@
             "new_limit_usd": 10.0,
             "status": "RESTRICTED_FOR_TESTING_STABILITY",
             "timestamp": "Sun Mar 15 08:59:12 2026"
+        },
+        {
+            "block_height": 29,
+            "type": "INTEGRATED_SYNC_BLOCK",
+            "amount": 13.9746,
+            "prev_hash_ref": "0x-c83ee6a2",
+            "timestamp": "Sun Mar 15 09:01:37 2026",
+            "integration_status": "VERIFIED_BY_V107"
+        },
+        {
+            "block_height": 30,
+            "type": "INTEGRATED_SYNC_BLOCK",
+            "amount": 6.4372,
+            "prev_hash_ref": "0x-4f26170d",
+            "timestamp": "Sun Mar 15 09:01:37 2026",
+            "integration_status": "VERIFIED_BY_V107"
+        },
+        {
+            "block_height": 31,
+            "type": "INTEGRATED_SYNC_BLOCK",
+            "amount": 6.6439,
+            "prev_hash_ref": "0x-b7a4c210",
+            "timestamp": "Sun Mar 15 09:01:37 2026",
+            "integration_status": "VERIFIED_BY_V107"
+        },
+        {
+            "block_height": 32,
+            "type": "INTEGRATED_SYNC_BLOCK",
+            "amount": 5.9108,
+            "prev_hash_ref": "0x-d8fd9a0c",
+            "timestamp": "Sun Mar 15 09:01:37 2026",
+            "integration_status": "VERIFIED_BY_V107"
+        },
+        {
+            "block_height": 33,
+            "type": "INTEGRATED_SYNC_BLOCK",
+            "amount": 13.5711,
+            "prev_hash_ref": "0x-9bb9d85e",
+            "timestamp": "Sun Mar 15 09:01:37 2026",
+            "integration_status": "VERIFIED_BY_V107"
         }
     ]
 }
