@@ -48,6 +48,17 @@
             "net_received": 49.0,
             "latency_ms": 50.20967908733653,
             "timestamp": "Sun Mar 15 05:30:37 2026"
+        },
+        {
+            "block_height": 6,
+            "type": "NETWORK_TRANSFER",
+            "from": "CYBER_MINER",
+            "to": "LIQUID_INTELLIGENCE",
+            "sent_amount": 75.0,
+            "gas_fee": 1.5,
+            "net_received": 73.5,
+            "latency_ms": 51.507402867837925,
+            "timestamp": "Sun Mar 15 05:32:29 2026"
         }
     ]
 }
