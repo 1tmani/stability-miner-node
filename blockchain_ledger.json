@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 291.9797,
+    "total_supply": 291.9497,
     "blocks": [
         {
             "block_height": 0,
@@ -204,6 +204,15 @@
             "settlement_window": "24H",
             "status": "SUCCESS_FUNDS_SENT_TO_BANK_EXPRESS",
             "timestamp": "Sun Mar 15 08:08:38 2026"
+        },
+        {
+            "block_height": 23,
+            "type": "PLAYSTORE_CREDIT_FINALIZED",
+            "amount_deducted": 0.03,
+            "fiat_credit": 300,
+            "tx_hash": "PLAY-SYNC-75ab891f",
+            "status": "SUCCESS_CREDIT_SENT_TO_GMAIL",
+            "timestamp": "Sun Mar 15 08:12:17 2026"
         }
     ]
 }
