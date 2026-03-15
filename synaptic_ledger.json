@@ -1,0 +1,12 @@
+{
+    "wallet_address": "0x-DEINCORE-MASTER-99",
+    "total_minted": 100.0,
+    "mining_pool_status": "OPEN",
+    "transactions": [
+        {
+            "type": "GENESIS",
+            "amount": 100.0,
+            "timestamp": "RECOVERY_SNAPSHOT"
+        }
+    ]
+}
