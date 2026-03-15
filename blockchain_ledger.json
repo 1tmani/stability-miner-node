@@ -348,9 +348,11 @@
             "type": "MANUAL_POLYGON_TEST_SYNC",
             "amount_sby_deducted": 0.002,
             "tx_hash": "POLY-TEST-TX-6e15f1df",
-            "status": "BRIDGE_HANDSHAKE_OPEN",
+            "status": "SUCCESS_MANUAL_BYPASS",
             "policy_override": "USER_MANUAL_UNLOCK_V175",
-            "timestamp": "Sun Mar 15 11:38:28 2026"
+            "timestamp": "Sun Mar 15 11:38:28 2026",
+            "bridge_lock_override": true
         }
-    ]
+    ],
+    "bridge_policy": "UNLOCKED_TEST_MODE"
 }
