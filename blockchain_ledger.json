@@ -37,6 +37,17 @@
             "amount": 15.8,
             "timestamp": "Sun Mar 15 05:09:41 2026",
             "status": "VERIFIED"
+        },
+        {
+            "block_height": 5,
+            "type": "NETWORK_TRANSFER",
+            "from": "LIQUID_INTEL",
+            "to": "SYNAPTIC_OVERLORD",
+            "sent_amount": 50.0,
+            "gas_fee": 1.0,
+            "net_received": 49.0,
+            "latency_ms": 50.20967908733653,
+            "timestamp": "Sun Mar 15 05:30:37 2026"
         }
     ]
 }
