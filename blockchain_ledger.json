@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 291.97970000000004,
+    "total_supply": 290.97970000000004,
     "blocks": [
         {
             "block_height": 0,
@@ -129,6 +129,14 @@
             "bridge_fee": 0.035,
             "target_chain": "USDT_ETHEREUM_MAINNET",
             "status": "PENDING_LIQUIDITY_RELEASE"
+        },
+        {
+            "block_height": 15,
+            "type": "EXCHANGE_TO_FIAT",
+            "amount_deducted": 1.0,
+            "net_value_unlocked": 120.1425,
+            "tx_id": "0x-ba439b65",
+            "status": "LIQUIDITY_RELEASED"
         }
     ]
 }
