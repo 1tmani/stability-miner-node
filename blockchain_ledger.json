@@ -253,6 +253,14 @@
             "status": "FUNDS_SENT_TO_BANK_VERIFIED",
             "tx_hash": "CASH-OUT-cd4d8b37",
             "timestamp": "Sun Mar 15 08:54:09 2026"
+        },
+        {
+            "block_height": 28,
+            "type": "SAFETY_LIMIT_RESTRICTION",
+            "card_id": "SBY-CARD-92a",
+            "new_limit_usd": 10.0,
+            "status": "RESTRICTED_FOR_TESTING_STABILITY",
+            "timestamp": "Sun Mar 15 08:59:12 2026"
         }
     ]
 }
