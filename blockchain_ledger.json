@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 286.47970000000004,
+    "total_supply": 286.27970000000005,
     "blocks": [
         {
             "block_height": 0,
@@ -175,6 +175,16 @@
             "settlement_window": "24H",
             "status": "SUCCESS_FUNDS_SENT_TO_BANK_EXPRESS",
             "timestamp": "Sun Mar 15 07:04:41 2026"
+        },
+        {
+            "block_height": 20,
+            "type": "SOLANA_CHAIN_MIGRATION",
+            "amount_sby_deducted": 0.2,
+            "amount_sol_credited": 0.166,
+            "target_sol_address": "46spDFz7t9L7UfUVUuCbspTCSmartU6WK95MQZNHjFpJ",
+            "tx_hash": "SOL-TX-2cc2fdad",
+            "status": "SUCCESS_ASSETS_BRIDGED_TO_SOLANA",
+            "timestamp": "Sun Mar 15 07:10:09 2026"
         }
     ]
 }
