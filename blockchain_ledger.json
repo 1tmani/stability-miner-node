@@ -223,6 +223,15 @@
             "tx_hash": "UPGRADE-TX-771d71d4",
             "membership_status": "ULTRA_ELITE_ACTIVE",
             "timestamp": "Sun Mar 15 08:48:33 2026"
+        },
+        {
+            "block_height": 25,
+            "type": "EXTERNAL_MODEL_AUDIT",
+            "target": "Gemini_3_Pro",
+            "result": "UPGRADE_NOT_FOUND_REVERSAL_TRIGGERED",
+            "cost_impact": 0,
+            "tx_hash": "AUDIT-TX-467f8b17",
+            "timestamp": "Sun Mar 15 08:50:26 2026"
         }
     ]
 }
