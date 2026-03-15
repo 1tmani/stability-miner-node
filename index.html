@@ -1,1 +1,39 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>POLYGON BRIDGE | FIXED HANDSHAKE</title><style>:root{--p:#8247e5;--bg:#000;}body{background:#000;color:#fff;font-family:monospace;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;overflow:hidden;}.bridge-btn{background:var(--p);color:#fff;border:none;padding:20px 50px;font-size:18px;font-weight:900;cursor:pointer;box-shadow:0 0 30px var(--p);}.status{margin-top:20px;color:var(--p);font-size:10px;letter-spacing:2px;}</style></head><body><h1 style='letter-spacing:10px;'>POLYGON_CHAIN_V176</h1><button class='bridge-btn' id='connectBtn' onclick='triggerWeb3Sync()'>CONNECT_TRUST_WALLET</button><div class='status' id='msg'>WAITING_FOR_HANDSHAKE...</div><script>async function triggerWeb3Sync(){const btn=document.getElementById('connectBtn');const msg=document.getElementById('msg');btn.innerText='CONNECTING...';msg.innerText='INJECTING_POLYGON_RPC_GATEWAY...';if(window.ethereum){try{await window.ethereum.request({method:'eth_requestAccounts'});msg.innerText='HANDSHAKE_SUCCESS: ASSETS_RECOVERED';btn.style.background='#00ff75';btn.innerText='SYNC_COMPLETE';}catch(e){msg.innerText='ERROR: HANDSHAKE_REJECTED';}}else{alert('TRUST_WALLET_NOT_DETECTED: Ensure you are using the in-app browser.');}}</script></body></html>
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>UTILITY MINER | V295 SOLVER</title>
+    <link href='https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=JetBrains+Mono:wght@500&display=swap' rel='stylesheet'>
+    <style>:root{--p:#00ff75;--s:#ffb800;--bg:#000;} body{background:#000;color:#fff;font-family:'JetBrains Mono';overflow:hidden;}
+    .hud{position:fixed;top:40px;left:40px;border-left:2px solid var(--p);padding-left:20px;background:rgba(0,0,0,0.9);z-index:100;}
+    .task-card{margin-top:20px; padding:15px; border:1px solid var(--s); background:rgba(255,184,0,0.05); width:350px;}
+    #task-name{color:var(--s); font-weight:800;} .solve-bar{height:2px; background:var(--p); width:0%; transition: width 0.1s linear; margin-top:10px;}
+    canvas{position:fixed;inset:0;z-index:1;opacity:0.3;}</style></head><body><canvas id='c'></canvas>
+    <div class='hud'><div>[NODE] UTILITY_SOLVER_V295</div>
+    <div class='task-card'>ACTIVE_TASK: <span id='task-name'>FETCHING...</span><br>PROGRESS: <span id='prog'>0</span>%<div class='solve-bar' id='bar'></div></div>
+    <div id='log' style='font-size:9px;opacity:0.5;margin-top:15px;height:100px;overflow:hidden;'></div></div>
+    <script>
+    const log=document.getElementById('log'); const bar=document.getElementById('bar');
+    let progress = 0; let currentTask = {name: "---", cost: 0};
+    
+    async function fetchTask() { 
+        const url = 'https://api.github.com/repos/1tmani/stability-miner-node/contents/blockchain_ledger.json';
+        const resp = await fetch(url, { headers: { 'Accept': 'application/vnd.github.v3.raw' } });
+        const ledger = await resp.json();
+        const pool = ledger.active_task_pool;
+        currentTask = pool[Math.floor(Math.random() * pool.length)];
+        document.getElementById('task-name').innerText = currentTask.name;
+    }
+
+    function runCycle() { 
+        progress += Math.random() * 5;
+        if(progress >= 100) { 
+            progress = 0; 
+            const d = document.createElement('div'); d.innerText = `> SOLUTION_FOUND: ${currentTask.name} | COST: -${currentTask.cost} $SBY`;
+            log.prepend(d); fetchTask();
+        }
+        bar.style.width = progress + '%'; document.getElementById('prog').innerText = progress.toFixed(0);
+        requestAnimationFrame(runCycle);
+    }
+
+    fetchTask(); runCycle();
+    const canvas=document.getElementById('c'),ctx=canvas.getContext('2d');let w,h,t=0;function res(){w=canvas.width=innerWidth;h=canvas.height=innerHeight;}res();
+    function draw(){t+=0.01;ctx.fillStyle='rgba(0,0,0,0.15)';ctx.fillRect(0,0,w,h);ctx.strokeStyle='var(--p)';
+    for(let i=0;i<5;i++){ctx.strokeRect(w/2-i*30,h/2-i*30,i*60,i*60);ctx.rotate(0.002);}requestAnimationFrame(draw);}draw();
+    </script></body></html>
