@@ -185,6 +185,25 @@
             "tx_hash": "SOL-TX-2cc2fdad",
             "status": "SUCCESS_ASSETS_BRIDGED_TO_SOLANA",
             "timestamp": "Sun Mar 15 07:10:09 2026"
+        },
+        {
+            "block_height": 21,
+            "type": "ESCROW_REVERSAL",
+            "original_tx": "SOL-TX-2cc2fdad",
+            "amount_restored": 0.2,
+            "reason": "RPC_TIMEOUT_REROUTE_TO_EXPRESS",
+            "timestamp": "Sun Mar 15 08:08:38 2026"
+        },
+        {
+            "block_height": 22,
+            "type": "EXPRESS_WIRE_FINALIZED",
+            "amount_deducted": 0.2,
+            "fiat_payout": 24.9,
+            "tx_hash": "EXPRESS-RECOVERY-d96a13e4",
+            "target_account_holder": "TIRATH MANI SHARMA",
+            "settlement_window": "24H",
+            "status": "SUCCESS_FUNDS_SENT_TO_BANK_EXPRESS",
+            "timestamp": "Sun Mar 15 08:08:38 2026"
         }
     ]
 }
