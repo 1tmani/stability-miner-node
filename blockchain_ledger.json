@@ -70,6 +70,17 @@
             "net_received": 98.0,
             "latency_ms": 34.45291352288774,
             "timestamp": "Sun Mar 15 05:34:20 2026"
+        },
+        {
+            "block_height": 8,
+            "type": "NETWORK_TRANSFER_STABILIZED",
+            "from": "LIQUID_INFRA",
+            "to": "SYNAPTIC_OVERLORD",
+            "sent_amount": 100.0,
+            "gas_fee": 1.5,
+            "net_received": 98.5,
+            "latency_ms": 60000,
+            "timestamp": "Sun Mar 15 05:36:26 2026"
         }
     ]
 }
