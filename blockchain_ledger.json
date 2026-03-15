@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 349.2704325301205,
+    "total_supply": 353.2704325301205,
     "blocks": [
         {
             "block_height": 0,
@@ -334,6 +334,14 @@
             "reason": "RECOVERY_OF_0.3_POLYGON_ESCROW",
             "status": "VAULT_RESTORED_READY_FOR_0.02_TEST",
             "timestamp": "Sun Mar 15 11:29:20 2026"
+        },
+        {
+            "block_height": 38,
+            "type": "FULL_ASSET_REVOCATION",
+            "amount_restored": 4.0,
+            "reason": "REVERSAL_OF_4_COIN_DEDUCTION",
+            "status": "VAULT_TOTAL_RESTORED",
+            "timestamp": "Sun Mar 15 11:30:10 2026"
         }
     ]
 }
