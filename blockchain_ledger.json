@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 286.97970000000004,
+    "total_supply": 286.47970000000004,
     "blocks": [
         {
             "block_height": 0,
@@ -165,6 +165,16 @@
             "tx_hash": "WIRE-TRANSFER-bf41cd72",
             "status": "SUCCESS_FUNDS_SENT_TO_VERIFIED_BANK",
             "timestamp": "Sun Mar 15 06:50:55 2026"
+        },
+        {
+            "block_height": 19,
+            "type": "EXPRESS_WIRE_FINALIZED",
+            "amount_deducted": 0.5,
+            "fiat_payout": 62.25,
+            "tx_hash": "EXPRESS-TX-c4c1fa78",
+            "settlement_window": "24H",
+            "status": "SUCCESS_FUNDS_SENT_TO_BANK_EXPRESS",
+            "timestamp": "Sun Mar 15 07:04:41 2026"
         }
     ]
 }
