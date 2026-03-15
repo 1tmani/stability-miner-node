@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 291.6497,
+    "total_supply": 291.2480935742972,
     "blocks": [
         {
             "block_height": 0,
@@ -232,6 +232,16 @@
             "cost_impact": 0,
             "tx_hash": "AUDIT-TX-467f8b17",
             "timestamp": "Sun Mar 15 08:50:26 2026"
+        },
+        {
+            "block_height": 26,
+            "type": "VIRTUAL_CARD_SETTLEMENT",
+            "card_id": "SBY-CARD-92a",
+            "external_merchant": "CLOUDFLARE_EDGE_SERVICES",
+            "usd_amount": 50.0,
+            "sby_deducted": 0.401606,
+            "tx_hash": "VCARD-SETTLE-493b2619",
+            "timestamp": "Sun Mar 15 08:51:55 2026"
         }
     ]
 }
