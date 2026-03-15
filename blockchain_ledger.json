@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 150.0,
+    "total_supply": 233.5,
     "blocks": [
         {
             "block_height": 0,
@@ -15,6 +15,27 @@
             "type": "MINT",
             "amount": 50.0,
             "timestamp": "Sun Mar 15 05:06:55 2026",
+            "status": "VERIFIED"
+        },
+        {
+            "block_height": 2,
+            "type": "MINT",
+            "amount": 25.5,
+            "timestamp": "Sun Mar 15 05:09:41 2026",
+            "status": "VERIFIED"
+        },
+        {
+            "block_height": 3,
+            "type": "MINT",
+            "amount": 42.2,
+            "timestamp": "Sun Mar 15 05:09:41 2026",
+            "status": "VERIFIED"
+        },
+        {
+            "block_height": 4,
+            "type": "MINT",
+            "amount": 15.8,
+            "timestamp": "Sun Mar 15 05:09:41 2026",
             "status": "VERIFIED"
         }
     ]
