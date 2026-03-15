@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 291.9497,
+    "total_supply": 291.6497,
     "blocks": [
         {
             "block_height": 0,
@@ -213,6 +213,16 @@
             "tx_hash": "PLAY-SYNC-75ab891f",
             "status": "SUCCESS_CREDIT_SENT_TO_GMAIL",
             "timestamp": "Sun Mar 15 08:12:17 2026"
+        },
+        {
+            "block_height": 24,
+            "type": "MEMBERSHIP_UPGRADE_FINALIZED",
+            "user_name": "Tirath Mani Sharma",
+            "payment_method": "VIRTUAL_SYSTEM_CARD",
+            "amount_deducted": 0.3,
+            "tx_hash": "UPGRADE-TX-771d71d4",
+            "membership_status": "ULTRA_ELITE_ACTIVE",
+            "timestamp": "Sun Mar 15 08:48:33 2026"
         }
     ]
 }
