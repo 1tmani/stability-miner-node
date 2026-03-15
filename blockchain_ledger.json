@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 291.2480935742972,
+    "total_supply": 290.4328325301205,
     "blocks": [
         {
             "block_height": 0,
@@ -242,6 +242,17 @@
             "sby_deducted": 0.401606,
             "tx_hash": "VCARD-SETTLE-493b2619",
             "timestamp": "Sun Mar 15 08:51:55 2026"
+        },
+        {
+            "block_height": 27,
+            "type": "BANK_SETTLEMENT_FINALIZED",
+            "card_source": "SBY-CARD-92a",
+            "usd_withdrawn": 100.0,
+            "sby_liquidated": 0.815261,
+            "bridge_fee_sby": 0.012048,
+            "status": "FUNDS_SENT_TO_BANK_VERIFIED",
+            "tx_hash": "CASH-OUT-cd4d8b37",
+            "timestamp": "Sun Mar 15 08:54:09 2026"
         }
     ]
 }
