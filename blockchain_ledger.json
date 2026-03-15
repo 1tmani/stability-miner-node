@@ -354,5 +354,26 @@
             "bridge_lock_override": true
         }
     ],
-    "bridge_policy": "UNLOCKED_TEST_MODE"
+    "bridge_policy": "UNLOCKED_TEST_MODE",
+    "active_task_pool": [
+        {
+            "id": "TASK_001",
+            "name": "NEURAL_ENCRYPTION_VERIFY",
+            "cost": 0.001,
+            "difficulty": "LOW"
+        },
+        {
+            "id": "TASK_002",
+            "name": "DATA_INDEXING_ALPHA",
+            "cost": 0.005,
+            "difficulty": "MEDIUM"
+        },
+        {
+            "id": "TASK_003",
+            "name": "RECURSIVE_SHADING_VALIDATION",
+            "cost": 0.01,
+            "difficulty": "HIGH"
+        }
+    ],
+    "utility_tier": "V290_SOLVING_ACTIVE"
 }
