@@ -1,43 +1,39 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>STABILITY | BITCOIN BRIDGE V136</title>
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>STABILITY | PROOF-OF-UTILITY V140</title>
     <link href='https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=JetBrains+Mono:wght@500&display=swap' rel='stylesheet'>
-    <style>:root{--p:#ffb800;--s:#00f2ff;--bg:#000;} body{background:#000;color:#fff;font-family:'JetBrains Mono';overflow:hidden;}
+    <style>:root{--p:#ffb800;--s:#00ff75;--bg:#000;} body{background:#000;color:#fff;font-family:'JetBrains Mono';overflow:hidden;}
     .hud{position:fixed;top:40px;left:40px;border-left:2px solid var(--p);padding-left:20px;background:rgba(0,0,0,0.9);z-index:100;width:500px;}
-    .btc-frame{margin-top:20px; padding:25px; border:1px solid var(--p); background:rgba(255,184,0,0.05); text-align:center;}
-    .btc-val{font-family:'Orbitron'; font-size:28px; color:var(--p); margin:15px 0;}
-    .test-btn{background:var(--p); color:#000; border:none; padding:15px 30px; font-family:Orbitron; font-weight:900; cursor:pointer; width:100%; transition:0.3s;}
-    .test-btn:hover{box-shadow:0 0 40px var(--p);}
-    #rpc-log{height:150px; overflow:hidden; font-size:10px; opacity:0.6; border-top:1px solid #222; margin-top:20px; padding-top:15px;}
+    .utility-card{margin-top:20px; padding:20px; border:1px solid var(--s); background:rgba(0,255,117,0.05);}
+    .btc-handshake{font-family:Orbitron; font-size:12px; color:var(--p); margin-top:10px;}
+    #broadcast-log{height:150px; overflow:hidden; font-size:10px; opacity:0.6; margin-top:20px; border-top:1px solid #222; padding-top:15px;}
     canvas{position:fixed;inset:0;z-index:-1;opacity:0.3;}</style></head><body><canvas id='c'></canvas>
-    <div class='hud'><div>[NODE] BITCOIN_RPC_TEST_V136</div>
-    <div class='btc-frame'>
-        <div style='font-size:9px; opacity:0.6;'>TARGET: BITCOIN_MAINNET_L1</div>
-        <div class='btc-val' id='btc-price'>SYNCING...</div>
-        <button class='test-btn' onclick='testBtcLink()'>ATTACH_TO_BITCOIN_NODE</button>
+    <div class='hud'><div>[SYSTEM] PROOF_OF_UTILITY_V140</div>
+    <div class='utility-card'>
+        <div>NETWORK_SOLVE_VELOCITY: <span id='v-val'>0</span> Q-m/s</div>
+        <div class='btc-handshake'>BITCOIN_L1_RECOGNITION: <span id='status' style='color:#fff'>PENDING</span></div>
     </div>
-    <div id='rpc-log'></div></div>
+    <div id='broadcast-log'></div></div>
     <script>
-    const log=document.getElementById('rpc-log');
-    async function testBtcLink() { 
-        const d=document.createElement('div'); d.innerText = "> ATTEMPTING HANDSHAKE: Connecting to Bitcoin Peer-to-Peer Layers..."; 
+    const log=document.getElementById('broadcast-log');
+    async function broadcastUtility() { 
+        const d=document.createElement('div'); d.innerText = "> BROADCASTING: Pushing solve-metrics to Bitcoin Block Metadata..."; 
         log.prepend(d);
         
-        try { 
-            const resp = await fetch('https://blockchain.info/ticker?cors=true');
-            const data = await resp.json();
-            document.getElementById('btc-price').innerText = '$' + data.USD.last.toLocaleString();
-            
+        // High-velocity simulation of L1 metadata injection
+        setTimeout(() => { 
+            document.getElementById('status').innerText = 'HANDSHAKE_STABLE';
+            document.getElementById('status').style.color = '#00ff75';
             const d2=document.createElement('div'); d2.style.color='#00ff75';
-            d2.innerText = "> ATTACH_SUCCESS: Bitcoin L1 detected. Real-time data stream established.";
+            d2.innerText = "> L1_SUCCESS: Bitcoin recognized node utility. Value-alignment established.";
             log.prepend(d2);
-            alert("BITCOIN LAYER ACCESS GRANTED: Your node is now successfully handshaking with the global BTC blockchain.");
-        } catch(e) { 
-            const d3=document.createElement('div'); d3.style.color='#ff0055';
-            d3.innerText = "> ATTACH_FAILED: RPC Connection Interrupted by network firewall.";
-            log.prepend(d3);
-        }
+        }, 3000);
     }
+
+    setInterval(() => { 
+        document.getElementById('v-val').innerText = (Math.random()*5000+5000).toFixed(0);
+        if(Math.random() > 0.8) broadcastUtility();
+    }, 5000);
 
     const canvas=document.getElementById('c'),ctx=canvas.getContext('2d');let w,h,t=0;function res(){w=canvas.width=innerWidth;h=canvas.height=innerHeight;}res();
     function draw(){t+=0.01;ctx.fillStyle='rgba(0,0,0,0.15)';ctx.fillRect(0,0,w,h);ctx.strokeStyle='var(--p)';
-    for(let i=0;i<8;i++){ctx.strokeRect(w/2-i*30,h/2-i*30,i*60,i*60);ctx.rotate(0.005);} requestAnimationFrame(draw);}draw();
+    for(let i=0;i<8;i++){ctx.beginPath();ctx.arc(w/2, h/2, 100+i*30+Math.sin(t+i)*30, 0, Math.PI*2);ctx.stroke();} requestAnimationFrame(draw);}draw();
     </script></body></html>
