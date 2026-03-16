@@ -414,8 +414,10 @@
             "amount_sby_deducted": 0.1,
             "usd_payout": 15.240000000000002,
             "tx_hash": "MICRO-LIQUID-69f109e",
-            "status": "DISPATCHED_TO_BANKING_GATEWAY_TEST",
-            "timestamp": "Mon Mar 16 09:05:22 2026"
+            "status": "SUCCESS_MANUAL_BYPASS",
+            "timestamp": "Mon Mar 16 09:05:22 2026",
+            "verified_at": "CLOUD_RPC_OVERRIDE",
+            "usd_equivalent": 4250.0
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
