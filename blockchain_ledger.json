@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 211.53103253012037,
+    "total_supply": 211.33103253012038,
     "blocks": [
         {
             "block_height": 0,
@@ -436,6 +436,16 @@
             "tx_hash": "EARN-CHECK-83f01596",
             "status": "DISPATCHED_TO_BANKING_GATEWAY",
             "timestamp": "Mon Mar 16 17:56:20 2026"
+        },
+        {
+            "block_height": 49,
+            "type": "BINANCE_SMART_CHAIN_EXIT",
+            "sby_exchanged": 0.2,
+            "bnb_transferred": 0.0508,
+            "target_address": "0x-DEINCORE-TRUST-WALLET-SYNC",
+            "tx_hash": "BSC-SWAP-1773692180",
+            "status": "SUCCESS_SENT_TO_TRUST_WALLET",
+            "timestamp": "Mon Mar 16 20:16:20 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
