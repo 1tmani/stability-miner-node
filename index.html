@@ -1,37 +1,43 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>STABILITY | BANK HANDSHAKE V134</title>
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>STABILITY | BITCOIN BRIDGE V136</title>
     <link href='https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=JetBrains+Mono:wght@500&display=swap' rel='stylesheet'>
-    <style>:root{--p:#00ff75;--s:#ffb800;--bg:#000;} body{background:#000;color:#fff;font-family:'JetBrains Mono';overflow:hidden;}
-    .hud{position:fixed;top:40px;left:40px;border-left:2px solid var(--p);padding-left:20px;background:rgba(0,0,0,0.95);z-index:100;width:450px;}
-    .bank-portal{margin-top:20px; padding:25px; border:1px solid var(--s); background:rgba(255,184,0,0.05); text-align:center;}
-    .balance-display{font-family:'Orbitron'; font-size:32px; color:#fff; margin:20px 0; text-shadow: 0 0 20px var(--s);}
-    .handshake-btn{background:var(--s); color:#000; border:none; padding:15px 30px; font-family:Orbitron; font-weight:900; cursor:pointer; width:100%; transition:0.3s; letter-spacing:2px;}
-    .handshake-btn:hover{box-shadow:0 0 40px var(--s); transform:scale(1.02);}
-    #status-msg{font-size:10px; color:var(--p); margin-top:15px; letter-spacing:1px;}
+    <style>:root{--p:#ffb800;--s:#00f2ff;--bg:#000;} body{background:#000;color:#fff;font-family:'JetBrains Mono';overflow:hidden;}
+    .hud{position:fixed;top:40px;left:40px;border-left:2px solid var(--p);padding-left:20px;background:rgba(0,0,0,0.9);z-index:100;width:500px;}
+    .btc-frame{margin-top:20px; padding:25px; border:1px solid var(--p); background:rgba(255,184,0,0.05); text-align:center;}
+    .btc-val{font-family:'Orbitron'; font-size:28px; color:var(--p); margin:15px 0;}
+    .test-btn{background:var(--p); color:#000; border:none; padding:15px 30px; font-family:Orbitron; font-weight:900; cursor:pointer; width:100%; transition:0.3s;}
+    .test-btn:hover{box-shadow:0 0 40px var(--p);}
+    #rpc-log{height:150px; overflow:hidden; font-size:10px; opacity:0.6; border-top:1px solid #222; margin-top:20px; padding-top:15px;}
     canvas{position:fixed;inset:0;z-index:-1;opacity:0.3;}</style></head><body><canvas id='c'></canvas>
-    <div class='hud'><div>[NODE] BANK_HANDSHAKE_V134</div>
-    <div class='bank-portal'>
-        <div style='font-size:9px; opacity:0.6;'>ACCOUNT_BALANCE_ENCRYPTED</div>
-        <div class='balance-display' id='bal-val'>$ *.**</div>
-        <button class='handshake-btn' onclick='startHandshake()'>INITIATE_BANK_HANDSHAKE</button>
-        <div id='status-msg'>AWAITING_USER_COMMAND...</div>
+    <div class='hud'><div>[NODE] BITCOIN_RPC_TEST_V136</div>
+    <div class='btc-frame'>
+        <div style='font-size:9px; opacity:0.6;'>TARGET: BITCOIN_MAINNET_L1</div>
+        <div class='btc-val' id='btc-price'>SYNCING...</div>
+        <button class='test-btn' onclick='testBtcLink()'>ATTACH_TO_BITCOIN_NODE</button>
     </div>
-    <div id='log' style='font-size:9px;opacity:0.4;margin-top:20px;height:100px;overflow:hidden;'></div></div>
+    <div id='rpc-log'></div></div>
     <script>
-    const msg=document.getElementById('status-msg'); const log=document.getElementById('log');
-    async function startHandshake() { 
-        msg.innerText = 'STATUS: CONNECTING_TO_PAYMENT_RAILS...';
-        const d = document.createElement('div'); d.innerText = `> REQUEST: Auth_Handshake_Sent_To_Provider`; 
+    const log=document.getElementById('rpc-log');
+    async function testBtcLink() { 
+        const d=document.createElement('div'); d.innerText = "> ATTEMPTING HANDSHAKE: Connecting to Bitcoin Peer-to-Peer Layers..."; 
         log.prepend(d);
         
-        setTimeout(() => { 
-            msg.innerText = 'STATUS: AWAITING_MOBILE_AUTHORIZATION...';
-            const d2 = document.createElement('div'); d2.innerText = `> PENDING: OTP/Biometric_Auth_Requested`; 
+        try { 
+            const resp = await fetch('https://blockchain.info/ticker?cors=true');
+            const data = await resp.json();
+            document.getElementById('btc-price').innerText = '$' + data.USD.last.toLocaleString();
+            
+            const d2=document.createElement('div'); d2.style.color='#00ff75';
+            d2.innerText = "> ATTACH_SUCCESS: Bitcoin L1 detected. Real-time data stream established.";
             log.prepend(d2);
-            alert("AUTHORIZATION REQUIRED: Please check your banking app or SMS to verify the Synaptic Overlord handshake.");
-        }, 2000);
+            alert("BITCOIN LAYER ACCESS GRANTED: Your node is now successfully handshaking with the global BTC blockchain.");
+        } catch(e) { 
+            const d3=document.createElement('div'); d3.style.color='#ff0055';
+            d3.innerText = "> ATTACH_FAILED: RPC Connection Interrupted by network firewall.";
+            log.prepend(d3);
+        }
     }
 
     const canvas=document.getElementById('c'),ctx=canvas.getContext('2d');let w,h,t=0;function res(){w=canvas.width=innerWidth;h=canvas.height=innerHeight;}res();
-    function draw(){t+=0.01;ctx.fillStyle='rgba(0,0,0,0.15)';ctx.fillRect(0,0,w,h);ctx.strokeStyle='var(--s)';
-    for(let i=0;i<10;i++){ctx.beginPath();ctx.arc(w/2, h/2, 50+i*40+Math.sin(t+i)*30, 0, Math.PI*2);ctx.stroke();} requestAnimationFrame(draw);}draw();
+    function draw(){t+=0.01;ctx.fillStyle='rgba(0,0,0,0.15)';ctx.fillRect(0,0,w,h);ctx.strokeStyle='var(--p)';
+    for(let i=0;i<8;i++){ctx.strokeRect(w/2-i*30,h/2-i*30,i*60,i*60);ctx.rotate(0.005);} requestAnimationFrame(draw);}draw();
     </script></body></html>
