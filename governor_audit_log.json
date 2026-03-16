@@ -1,0 +1,8 @@
+{
+    "node_id": "LIQUID_INTEL",
+    "input_fragment": "output data fragment 0x99",
+    "hash": "a334446e69a3609a49943c7458851b7139094ab18a6fe7e226b6f8859aa5cdef",
+    "timestamp": "2026-03-16T14:33:08Z",
+    "status": "VERIFIED",
+    "verifier_signature": "SIG-UTILITY_SOLVER-a334446e"
+}
