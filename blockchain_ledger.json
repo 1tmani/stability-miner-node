@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 352.71843253012037,
+    "total_supply": 211.63103253012036,
     "blocks": [
         {
             "block_height": 0,
@@ -418,6 +418,15 @@
             "timestamp": "Mon Mar 16 09:05:22 2026",
             "verified_at": "CLOUD_RPC_OVERRIDE",
             "usd_equivalent": 4250.0
+        },
+        {
+            "block_height": 47,
+            "type": "NEURAL_STAKING_LOCK",
+            "amount_locked": 141.0874,
+            "btc_anchor_block": 940898,
+            "status": "STAKED_IN_VAULT",
+            "policy": "SCARCITY_ENFORCEMENT_V1",
+            "timestamp": "Mon Mar 16 13:41:26 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
@@ -441,5 +450,6 @@
             "difficulty": "HIGH"
         }
     ],
-    "utility_tier": "V290_SOLVING_ACTIVE"
+    "utility_tier": "V290_SOLVING_ACTIVE",
+    "staked_balance": 141.0874
 }
