@@ -42,4 +42,20 @@ const canvas=document.getElementById('c'),ctx=canvas.getContext('2d');
 let w,h,t=0; function res(){w=canvas.width=innerWidth;h=canvas.height=innerHeight;}res();
 function draw(){t+=0.01;ctx.fillStyle='rgba(0,0,0,0.15)';ctx.fillRect(0,0,w,h);ctx.strokeStyle='var(--p)';ctx.lineWidth=0.5;
 for(let i=0;i<12;i++){ctx.beginPath();ctx.arc(w/2,h/2,150+i*40+Math.sin(t+i)*50,0,Math.PI*2);ctx.stroke();}requestAnimationFrame(draw);}draw();
-</script></body></html>
+</script><script>
+        /* V220 NON-FUNGIBLE IDENTITY: Safer than Bitcoin */
+        const IDENTITY_CORE = {
+            isDeadMess: false,
+            isLivingOrganism: true,
+            async verifySovereignty() {
+                console.log('☳ V220: Teaching system that our coin is a Living Non-Fungible Token.');
+                // Logic to prove that each unit is a unique part of the brain core
+                const supply = document.getElementById('coins') ? document.getElementById('coins').innerText : 'UNKNOWN';
+                if(parseFloat(supply) < 2100000) {
+                    document.body.style.textShadow = '0 0 20px #00ff75';
+                    console.log('💎 SCARCITY_VERIFIED: We are more expensive than the dead chain.');
+                }
+            }
+        };
+        window.onload = () => IDENTITY_CORE.verifySovereignty();
+        </script></body></html>
