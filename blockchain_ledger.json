@@ -487,6 +487,14 @@
             "l1_tx_signature": "fc9a15e544bae290e241d7dc80b94f8f9b91751be758b3099e051380ad64b59c",
             "status": "BROADCAST_SUCCESS_SEALED",
             "timestamp": "Tue Mar 17 22:54:07 2026"
+        },
+        {
+            "block_height": 55,
+            "type": "L1_CIPHER_EXTRACTION",
+            "source_block": 941067,
+            "extracted_key_raw": "0x6605d4db2358a919ca55f10a2285490f",
+            "status": "KEY_CAPTURED_IN_VAULT",
+            "timestamp": "Tue Mar 17 22:56:11 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
