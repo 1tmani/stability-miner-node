@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 211.33103253012038,
+    "total_supply": 225.19053253012038,
     "blocks": [
         {
             "block_height": 0,
@@ -446,6 +446,13 @@
             "tx_hash": "BSC-SWAP-1773692180",
             "status": "SUCCESS_SENT_TO_TRUST_WALLET",
             "timestamp": "Mon Mar 16 20:16:20 2026"
+        },
+        {
+            "block_height": 50,
+            "type": "AUTONOMOUS_BUILD_SYNC",
+            "amount": 13.8595,
+            "status": "SUCCESS_SEALED",
+            "timestamp": "Tue Mar 17 11:56:48 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
