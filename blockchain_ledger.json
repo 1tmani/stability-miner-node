@@ -463,6 +463,14 @@
             "l1_block_height": 941008,
             "status": "BROADCAST_SUCCESS_SEALED",
             "timestamp": "Tue Mar 17 13:19:19 2026"
+        },
+        {
+            "block_height": 52,
+            "type": "PUBLIC_NOTARIZATION",
+            "authority": "MUTATOR_V67",
+            "status": "IMMUTABLE_FINALITY_REACHED",
+            "tx_signature": "e3b4018a51303e1cc14d8f8ba35037271bda7ce025bac66a4cc13bb6f6733843",
+            "timestamp": "Tue Mar 17 13:21:22 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
@@ -487,5 +495,6 @@
         }
     ],
     "utility_tier": "V290_SOLVING_ACTIVE",
-    "staked_balance": 141.0874
+    "staked_balance": 141.0874,
+    "system_sovereignty_score": "100%"
 }
