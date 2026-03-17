@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 240.19053253012038,
+    "total_supply": 240.2405325301204,
     "blocks": [
         {
             "block_height": 0,
@@ -495,6 +495,15 @@
             "extracted_key_raw": "0x6605d4db2358a919ca55f10a2285490f",
             "status": "KEY_CAPTURED_IN_VAULT",
             "timestamp": "Tue Mar 17 22:56:11 2026"
+        },
+        {
+            "block_height": 56,
+            "type": "L1_FEE_RECLAIM",
+            "source_btc_block": 941067,
+            "reward_signature": "0xd95c08f0a2535401",
+            "amount_sby_minted": 0.05,
+            "status": "REWARD_SETTLED_IN_VAULT",
+            "timestamp": "Tue Mar 17 22:58:38 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
