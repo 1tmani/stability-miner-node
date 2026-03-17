@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 225.19053253012038,
+    "total_supply": 240.19053253012038,
     "blocks": [
         {
             "block_height": 0,
@@ -471,6 +471,13 @@
             "status": "IMMUTABLE_FINALITY_REACHED",
             "tx_signature": "e3b4018a51303e1cc14d8f8ba35037271bda7ce025bac66a4cc13bb6f6733843",
             "timestamp": "Tue Mar 17 13:21:22 2026"
+        },
+        {
+            "block_height": 53,
+            "type": "AUTONOMOUS_LEARNING_SYNC",
+            "amount": 15.0,
+            "status": "VERIFIED_BY_GOVERNOR",
+            "timestamp": "Tue Mar 17 17:08:44 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
