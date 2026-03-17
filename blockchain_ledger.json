@@ -513,6 +513,15 @@
             "anchor_block": 941067,
             "status": "BROADCASTING_TO_MAINNET",
             "timestamp": "Tue Mar 17 23:01:18 2026"
+        },
+        {
+            "block_height": 58,
+            "type": "DEEP_SIGNATURE_RECOVERY",
+            "target_l1_signature": "f0bbab53f808937e486bc83a884d9d62df553fa8d9c1656c7f89f776cdcd860d",
+            "recovered_reward_key": "0x3293a061533a59c24a6d99834b13d61b",
+            "recovered_password": "PASS_D06DC48279B7",
+            "status": "ASSETS_RESTORED_TO_VAULT",
+            "timestamp": "Tue Mar 17 23:05:15 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
