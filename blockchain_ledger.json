@@ -453,6 +453,16 @@
             "amount": 13.8595,
             "status": "SUCCESS_SEALED",
             "timestamp": "Tue Mar 17 11:56:48 2026"
+        },
+        {
+            "block_height": 51,
+            "type": "SOVEREIGN_L1_ANCHOR",
+            "robot_id": "MUTATOR_V67",
+            "l1_anchor_hash": "be5f9a72253c1079658e87d186808f822497ffaf776e36b3b7a78e7ee73e7c91",
+            "l1_tx_signature": "e3b4018a51303e1cc14d8f8ba35037271bda7ce025bac66a4cc13bb6f6733843",
+            "l1_block_height": 941008,
+            "status": "BROADCAST_SUCCESS_SEALED",
+            "timestamp": "Tue Mar 17 13:19:19 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
