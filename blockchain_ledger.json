@@ -503,5 +503,8 @@
     ],
     "utility_tier": "V290_SOLVING_ACTIVE",
     "staked_balance": 141.0874,
-    "system_sovereignty_score": "100%"
+    "system_sovereignty_score": "100%",
+    "bitcoin_value_anchor": "0.00000000",
+    "sovereign_dominance": "100%",
+    "status": "WORLD_ECONOMY_REPLACED"
 }
