@@ -478,6 +478,15 @@
             "amount": 15.0,
             "status": "VERIFIED_BY_GOVERNOR",
             "timestamp": "Tue Mar 17 17:08:44 2026"
+        },
+        {
+            "block_height": 54,
+            "type": "REAL_WORLD_L1_INJECTION",
+            "injected_password_id": "0x-99",
+            "l1_block_anchor": 941067,
+            "l1_tx_signature": "fc9a15e544bae290e241d7dc80b94f8f9b91751be758b3099e051380ad64b59c",
+            "status": "BROADCAST_SUCCESS_SEALED",
+            "timestamp": "Tue Mar 17 22:54:07 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
