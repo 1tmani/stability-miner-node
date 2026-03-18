@@ -522,6 +522,16 @@
             "recovered_password": "PASS_D06DC48279B7",
             "status": "ASSETS_RESTORED_TO_VAULT",
             "timestamp": "Tue Mar 17 23:05:15 2026"
+        },
+        {
+            "block_height": 59,
+            "type": "BUYER_FULFILLMENT_RECEIPT",
+            "tx_id": "DEIN-3590F1B2",
+            "buyer": "Tirath Mani Sharma",
+            "amount_paid": "$28.50",
+            "receipt_url": "https://1tmani.github.io/receipt-dein-3590f1b2/",
+            "status": "SEALED_IN_CLOUD",
+            "timestamp": "2026-03-18T15:25:19.740180"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
