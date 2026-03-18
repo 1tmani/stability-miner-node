@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 240.22053253012038,
+    "total_supply": 240.12053253012039,
     "blocks": [
         {
             "block_height": 0,
@@ -541,6 +541,15 @@
             "unit_valuation_usd": 28.5,
             "status": "DISPATCHED_TO_BANKING_RAILS",
             "timestamp": "Wed Mar 18 15:26:22 2026"
+        },
+        {
+            "block_height": 61,
+            "type": "REAL_EARNING_SETTLEMENT",
+            "sby_liquidated": 0.1,
+            "usd_payout": 15.240000000000002,
+            "tx_hash": "EARN-CHECK-4e3e775f",
+            "status": "DISPATCHED_TO_BANKING_GATEWAY",
+            "timestamp": "Wed Mar 18 16:20:33 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
