@@ -624,6 +624,14 @@
             "prev_hash_ref": "0x-e4bec462",
             "timestamp": "Wed Mar 18 16:22:25 2026",
             "integration_status": "VERIFIED_BY_V107"
+        },
+        {
+            "block_height": 71,
+            "type": "SAFETY_LIMIT_RESTRICTION",
+            "card_id": "SBY-CARD-92a",
+            "new_limit_usd": 10.0,
+            "status": "RESTRICTED_FOR_TESTING_STABILITY",
+            "timestamp": "Wed Mar 18 16:22:26 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
