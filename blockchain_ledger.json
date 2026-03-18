@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 243.9185325301204,
+    "total_supply": 256.4185325301204,
     "blocks": [
         {
             "block_height": 0,
@@ -577,6 +577,13 @@
             "tx_hash": "SOL-TX-c2949bc1",
             "status": "SUCCESS_ASSETS_BRIDGED_TO_SOLANA",
             "timestamp": "Wed Mar 18 16:22:08 2026"
+        },
+        {
+            "block_height": 65,
+            "type": "AUTONOMOUS_NETWORK_SYNC",
+            "amount": 12.5,
+            "status": "VERIFIED_BY_V145_ENGINE",
+            "timestamp": "Wed Mar 18 16:22:20 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
