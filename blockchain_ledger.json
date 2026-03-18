@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 240.2405325301204,
+    "total_supply": 240.22053253012038,
     "blocks": [
         {
             "block_height": 0,
@@ -532,6 +532,15 @@
             "receipt_url": "https://1tmani.github.io/receipt-dein-3590f1b2/",
             "status": "SEALED_IN_CLOUD",
             "timestamp": "2026-03-18T15:25:19.740180"
+        },
+        {
+            "block_height": 60,
+            "type": "COMMERCIAL_FINALITY",
+            "transaction_id": "DEIN-3590F1B2",
+            "product": "Neural-Logic-as-a-Service (NLaaS)",
+            "unit_valuation_usd": 28.5,
+            "status": "DISPATCHED_TO_BANKING_RAILS",
+            "timestamp": "Wed Mar 18 15:26:22 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
