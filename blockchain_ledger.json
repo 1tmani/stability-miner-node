@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 290.09743253012044,
+    "total_supply": 290.14743253012045,
     "blocks": [
         {
             "block_height": 0,
@@ -651,6 +651,14 @@
             "utr_reference": "SBY-LND-NY-MUM-7897",
             "status": "DISPATCHED_TO_CLEARING_NODE",
             "timestamp": "2026-03-19 11:42:48 UTC"
+        },
+        {
+            "block_height": 74,
+            "type": "SYSTEM_ACCESS_FEE",
+            "user_id": "USER_COLAB_TEST_99",
+            "amount": 0.05,
+            "status": "SUCCESS_SEALED",
+            "timestamp": "Thu Mar 19 13:26:15 2026"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
