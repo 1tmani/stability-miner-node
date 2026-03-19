@@ -1,7 +1,7 @@
 {
     "blockchain_id": "SYNAPTIC_CHAIN_01",
     "wallet_address": "0x-ghp_i18n...e7Wy",
-    "total_supply": 300.09743253012044,
+    "total_supply": 290.09743253012044,
     "blocks": [
         {
             "block_height": 0,
@@ -640,6 +640,17 @@
             "amount_earned": 0.05,
             "status": "SUCCESS_SEALED",
             "verification_ts": "Thu Mar 19 10:32:46 2026"
+        },
+        {
+            "block_height": 73,
+            "type": "BANK_WIRE_TRANSFER",
+            "amount_sby": 10.0,
+            "usd_equivalent": 1524.0,
+            "inr_equivalent": 126720.6,
+            "tx_hash": "0x4ca65182ffc95696",
+            "utr_reference": "SBY-LND-NY-MUM-7897",
+            "status": "DISPATCHED_TO_CLEARING_NODE",
+            "timestamp": "2026-03-19 11:42:48 UTC"
         }
     ],
     "bridge_policy": "UNLOCKED_TEST_MODE",
